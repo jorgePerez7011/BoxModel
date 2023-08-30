@@ -7,18 +7,18 @@ header{
     height: 60px;
 }
 section{
+    /*flex-direction: row-reverse;*/
+    display: flex;
 background-color: greenyellow;
 overflow: hidden;
 }
 nav{
     background-color: beige;
-    float: left;
     width: 25%;
 }
 article{
     background-color: aquamarine;
-    float: left;
-    width: 55%;
+    width: 75%;
     height: 80px;
 }
 footer{
