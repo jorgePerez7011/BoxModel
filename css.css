@@ -5,29 +5,32 @@ html,body{
 header{
     background-color: purple;
     height: 60px;
+    grid-area: header;
 }
-section{
-    /*flex-direction: row-reverse;*/
-    display: flex;
-background-color: greenyellow;
-overflow: hidden;
-}
+
 nav{
     background-color: beige;
-    width: 25%;
+    grid-area: menu;
 }
 article{
     background-color: aquamarine;
-    width: 75%;
+    grid-area: content;
     height: 80px;
 }
 footer{
     background-color: pink;
     height: 120px;
+    grid-area: footer;
     
 }
 #container{
-    background-color: purple;
-   max-width: 1000px;
+    background-color: orange;
    margin:0 auto;
+   max-width: 800px;
+   display: grid;
+  grid-template-areas: 
+  "header header header header"
+  "menu content content content"
+  "footer footer footer footer"
+  ;
 }
